@@ -1,0 +1,20 @@
+{
+  "name": "5-11-23-mern-book-search-engine",
+  "version": "1.0.0",
+  "description": "Building a book search engine using MERN",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmabie94/5-11-23-MERN-Book-Search-Engine.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmabie94/5-11-23-MERN-Book-Search-Engine/issues"
+  },
+  "homepage": "https://github.com/jmabie94/5-11-23-MERN-Book-Search-Engine#readme"
+}
