@@ -1,6 +1,6 @@
 const { AuthenticationError } = require('apollo-server-express');
 const { User } = require('../models');
-const { withAuth } = require('../utils/auth');
+const { signToken } = require('../utils/auth');
 
 const resolvers = {
     Query: {
@@ -24,12 +24,12 @@ const resolvers = {
             if (!correctPassword) {
                 throw new AuthenticationError("Incorrect Password");
             }
-            const token = withAuth(user);
+            const token = signToken(user);
             return { token, user };
         },
         createUser: async (parent, args) => {
             const user = await User.create(args);
-            const token = withAuth(user);
+            const token = signToken(user);
             return { token, user };
         },
         saveBook: async (parent, { input }, context) => {
