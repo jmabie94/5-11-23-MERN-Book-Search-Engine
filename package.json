@@ -1,20 +1,18 @@
 {
-  "name": "5-11-23-mern-book-search-engine",
+  "name": "mern-book-search-engine",
   "version": "1.0.0",
-  "description": "Building a book search engine using MERN",
-  "main": "index.js",
+  "description": "",
+  "main": "server/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jmabie94/5-11-23-MERN-Book-Search-Engine.git"
+    "start": "node server/server.js",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "build": "cd client && npm run build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jmabie94/5-11-23-MERN-Book-Search-Engine/issues"
-  },
-  "homepage": "https://github.com/jmabie94/5-11-23-MERN-Book-Search-Engine#readme"
+  "devDependencies": {
+    "concurrently": "^5.1.0"
+  }
 }
