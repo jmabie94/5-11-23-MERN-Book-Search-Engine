@@ -1,4 +1,5 @@
 const express = require('express');
+
 // needs ApolloServer
 const { ApolloServer } = require('apollo-server-express');
 const path = require('path');
@@ -9,6 +10,7 @@ const db = require('./config/connection');
 // does not need routes
 // const routes = require('./routes');
 
+// dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3001;
 
